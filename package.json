@@ -9,7 +9,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc -p ./jsconfig.json",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "extract-pdf": "node scripts/extractPdfToText.js",
+    "ingest": "node --max-old-space-size=8192 scripts/ingestEUAIAct.js"
   },
   "dependencies": {
     "@hello-pangea/dnd": "^17.0.0",
